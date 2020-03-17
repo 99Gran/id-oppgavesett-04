@@ -1,0 +1,55 @@
+* {
+    background-color: thistle;
+    margin:0;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+    color: slategray;
+    padding: 25px;
+}
+
+h2 {
+    color: rgb(126, 127, 129); 
+    font-weight: 700;
+    padding: 20px;
+}
+
+p {
+    color: rgb(102, 102, 102);
+}
+
+section {
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(126, 127, 129);
+}
+
+a:visited {
+    color: black;
+}
+
+a:link, a:visited {
+    background-color: rgb(126, 127, 129);
+    color: white;
+    padding: 40px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover, a:active {
+    background-color: rgb(89, 89, 90);
+    transition: 1s;
+  }
