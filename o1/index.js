@@ -7,7 +7,7 @@ filmer[2] = "Leon";
 
 console.log(filmer)*/
 
-const listFilm = document.querySelector("#listFilm");
+/*const listFilm = document.querySelector("#listFilm");
 const inpNyFilm = document.querySelector("#inpNyFilm");
 const btn = document.querySelector("#btn");
 
@@ -35,4 +35,27 @@ function leggTilFilm() {
     visFilmer();
 }
 
-btn.onclick = leggTilFilm;
+btn.onclick = leggTilFilm;*/
+
+const listFilm = document.querySelector("#listFilm");
+const inpNyFilm = document.querySelector("#inpNyFilm");
+const btn = document.querySelector("#btn");
+let filmer = ["Benhur", "ET"]
+
+function visFilmer() {
+
+    listFilmer.innerHTML =""
+
+    for(const film of filmer) {
+        listFilmer.innerHTML += `<li>${film}</li>`
+    }
+}
+
+function leggTilFilm () {
+    filmer.push(inpNyFilm)
+    visFilmer
+}
+
+GamepadButton.onclick = leggTilFilm()
+
+visFilmer();
