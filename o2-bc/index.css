@@ -5,6 +5,10 @@ body {
     background-color: thistle;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 h1, p {
     padding-left: 2rem;
 }
@@ -16,4 +20,8 @@ input {
 ul {
     padding-left: 3rem;
     padding-top: 1rem;
+}
+
+button {
+    margin-left: 2rem; 
 }
