@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: thistle;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1, p {
+    padding-left: 2rem;
+}
+
+a:link {
+    color: rgb(126, 127, 129);
+}
+
+a:visited {
+    color: green;
+}

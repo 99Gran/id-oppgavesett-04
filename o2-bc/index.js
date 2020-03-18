@@ -10,25 +10,17 @@ let venner = [
 ];
 
 
-function visVenner() {
+function visVenn() {
+    nyVenn.innerHTML += "";
 
-    listVenn.innerHTML = "";
-
-    for(const venner of venner) {
-        listVenn.innerHTML += `<li>${venner}</li>`;
-    }
-    
-    inpNyvenn.value = "";
-    inpNyvenn.focus();
-    
+    inpNyvenn.value="";
+    alder.value="";
 }
 
 
-
-
 function leggTilVenn() {
-    venner = [inpNyvenn.value, ...venner];
-    visVenner();
+    venner = [nyVenn.value];
+    visVenn();
 }
 
 btn.onclick = leggTilVenn;
