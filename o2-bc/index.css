@@ -1,16 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: thistle;
 }
 
 h1 {
-    font-size: 3rem;
-}
-
-h1, p {
-    padding-left: 2rem;
+    font-size: 4rem;
+    color: slategray;
+    padding: 20px;
 }
 
 input {
@@ -24,4 +22,19 @@ ul {
 
 button {
     margin-left: 2rem; 
+}
+
+section {
+    margin: 2rem 0 0 2rem;
+}
+
+#venneliste {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+}
+
+#venneliste div {
+    padding: 1rem;
+    border-bottom: 1px solid black;
 }

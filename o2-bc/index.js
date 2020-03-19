@@ -1,26 +1,36 @@
-const inpNyvenn = document.querySelector("#inpNyvenn");
-const nyVenn = document.querySelector("#nyVenn");
-const alder = document.querySelector("#alder");
+const inpNavn = document.querySelector("#inpNavn");
+const inpAlder = document.querySelector("#inpAlder");
 const btn = document.querySelector("#btn");
 
+let venneliste = document.querySelector("#venneliste");
+
 let venner = [
-    { navn: "", alder: 25 },
-    { navn: "", alder: 43 },
-    { navn: "", alder: 24 }
+    { navn: "Petter", alder: 25 },
+    { navn: "Silje", alder: 43 },
+    { navn: "Nina", alder: 24 }
 ];
 
 
-function visVenn() {
-    nyVenn.innerHTML += "";
+function visVenner() {
+    venneliste.innerHTML = "<div>Navn</div><div>Alder</div>";
 
-    inpNyvenn.value="";
-    alder.value="";
+    for(const venn of venner) {
+        venneliste.innerHTML += `
+            <div>${venn.navn}</div>
+            <div>${venn.alder}</div>
+        `
+    }
 }
+
+visVenner()
 
 
 function leggTilVenn() {
-    venner = [nyVenn.value];
-    visVenn();
+    const nyVenn = { navn: inpNavn.value, alder: inpAlder.value }
+    // venner.push(nyVenn)
+    venner = [nyVenn, ...venner]
+    
+    visVenner();
 }
 
 btn.onclick = leggTilVenn;
