@@ -1,28 +1,24 @@
 * {
-    background-color: thistle;
     margin:0;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 body {
+    padding: 1.5rem 0 0 2rem;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    background: rgb(255,0,212);
+    background: linear-gradient(90deg, rgba(255,0,212,1) 0%, rgba(0,221,255,1) 100%);
 }
 
 h1{
     font-size: 4rem;
-    color: slategray;
+    color: #fff;
     padding: 25px;
 }
 
-h2 {
-    color: rgb(126, 127, 129); 
-    font-weight: 700;
-    padding: 20px;
-}
-
 p {
-    color: rgb(102, 102, 102);
+    color: #fff;
 }
 
 section {
@@ -46,24 +42,20 @@ a {
     text-decoration: none;
 }
 
-a:link {
-    color: rgb(126, 127, 129);
-}
-
-a:visited {
-    color: black;
-}
-
 a:link, a:visited {
-    background-color: rgb(126, 127, 129);
     color: white;
+    padding: 10px;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
+    border: #fff 2px solid;
+    border-radius: 2px;
+}
 
   a:hover, a:active {
-    background-color: rgb(89, 89, 90);
+    background-color: #fff;
+    color: rgb(255,0,212);
+    color: linear-gradient(90deg, rgba(255,0,212,1) 0%, rgba(0,221,255,1) 100%);
     transition: 1s;
   }
